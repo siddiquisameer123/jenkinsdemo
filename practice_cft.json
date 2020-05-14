@@ -1,0 +1,33 @@
+{
+"Resources": {
+      
+
+       "CLOUDTCGEC2SG2": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+			               "GroupDescription" : "Security group created by CFT",
+			               "GroupName" : "CLOUDTCGEC2-SG2",
+			               "SecurityGroupEgress" : [ 
+                                    { "IpProtocol": "tcp",
+					                  "FromPort": "22",
+					                  "ToPort": "22",
+					                  "CidrIp": "70.123.114.32/32"
+			            	},
+				         {
+					                  "IpProtocol": "tcp",
+					                  "FromPort": "443",
+					                  "ToPort": "443",
+					                  "CidrIp": "70.123.114.32/32"
+				        },
+				       {
+					                  "IpProtocol": "tcp",
+					                  "FromPort": "80",
+					                  "ToPort": "80",
+					                  "CidrIp": "70.123.114.32/32"
+				       }],
+			                "VpcId" : "vpc-52dc2c39"
+			}			
+        }
+    
+}
+}
