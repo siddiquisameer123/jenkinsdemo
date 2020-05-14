@@ -2,7 +2,7 @@
 "Resources": {
       
 
-       "CLOUDTCGEC2SG2": {
+       "CLOUDTCGEC2SG3": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
 			               "GroupDescription" : "Security group created by CFT",
